@@ -301,20 +301,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 4c0d13d6de907214cb0eac9062b394da, type: 3}
   m_PrefabInstance: {fileID: 125459516}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &125459519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125459518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b236053a999d46a4895f876414b2f9bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_fire: {fileID: 9059454640579659194, guid: f496f438bd6c494499334a9440db1333, type: 3}
-  m_appearancePlace: {fileID: 0}
 --- !u!95 &125459520
 Animator:
   serializedVersion: 5
@@ -336,6 +322,46 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &125459523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125459518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007f5ac471fcff44b90e5f9ae532538e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_fire_Special: {fileID: 9059454640579659194, guid: 7530fece0f6236b49b146126f93ca8e9, type: 3}
+  m_appearancePlace: {fileID: 0}
+--- !u!114 &125459524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125459518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be18b2e9ef3153488277dff6e9377ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &125459527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125459518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f8f515893d705a448afddcb2e59fe22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_fire_Standerd: {fileID: 1725317912486240, guid: 55b8a7f2dd898dd48bbc62b1dc56e6fc, type: 3}
+  m_appearancePlace: {fileID: 0}
 --- !u!1 &172614034
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,7 +977,6 @@ GameObject:
   - component: {fileID: 1853851978}
   - component: {fileID: 1853851977}
   - component: {fileID: 1853851976}
-  - component: {fileID: 1853851975}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -959,20 +984,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!114 &1853851975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853851974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49cba55daba86c0408f703a44e97d66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_explosion: {fileID: 911099564405995724, guid: 14f785e073ef3f345b17c88358b6e372, type: 3}
-  m_fireMagicDestroy: {fileID: 6675639493265490443, guid: f496f438bd6c494499334a9440db1333, type: 3}
 --- !u!154 &1853851976
 TerrainCollider:
   m_ObjectHideFlags: 0

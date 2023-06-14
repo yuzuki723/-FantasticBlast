@@ -5,40 +5,51 @@ using UnityEngine;
 public class MagicParent : MonoBehaviour
 {
     //特殊魔法は発動していない
-    bool SpecialMagicFlg;
+    private bool m_specialMagicFlg;
 
     //通常魔法は発動していない
-    bool StandardMagicFlg;
+    private bool m_standardMagicFlg;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonUp(0))
-        {
-            //右クリックで通常魔法発動
-            StandardMagicFlg = true;
-            return;
-        }
-        else
-        {
-            StandardMagicFlg = false;
-        }
-
         if (Input.GetMouseButtonDown(0))
         {
-            //右クリックで特殊魔法発動
-            SpecialMagicFlg = true;
+            //左クリックで通常魔法発動
+            m_standardMagicFlg = true;
             return;
         }
         else
         {
-            SpecialMagicFlg = false;
+            m_standardMagicFlg = false;
         }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            //右クリックで特殊魔法発動
+            m_specialMagicFlg = true;
+            return;
+        }
+        else
+        {
+            m_specialMagicFlg = false;
+        }
+    }
+
+    public bool IsStandardMagicFlg()
+    { 
+        return m_standardMagicFlg;
+    }
+
+    public bool IsSpecialMagicFlg()
+    { 
+        return m_specialMagicFlg;
     }
 }
