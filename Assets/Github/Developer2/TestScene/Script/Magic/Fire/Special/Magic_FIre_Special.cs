@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Magic_FIre_Special : MonoBehaviour
+public class Magic_Fire_Special : MonoBehaviour
 {
 
     private MagicParent m_magic;
@@ -29,7 +29,7 @@ public class Magic_FIre_Special : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         //クールタイムの減らす
         DecreaseMagicCoolTime();

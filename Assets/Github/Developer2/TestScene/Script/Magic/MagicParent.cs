@@ -10,14 +10,6 @@ public class MagicParent : MonoBehaviour
     //’Êí–‚–@‚Í”­“®‚µ‚Ä‚¢‚È‚¢
     private bool m_standardMagicFlg;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Magic_Fire_Standerd : MonoBehaviour
 {
-   
+
     private MagicParent m_magic;
 
     [SerializeField] GameObject m_fire_Standerd;
@@ -13,7 +13,6 @@ public class Magic_Fire_Standerd : MonoBehaviour
     //魔法の速さ
     private float m_magicSpeed;
 
-    // Start is called before the first frame update
     void Start()
     {
         m_magic = GetComponent<MagicParent>();
@@ -23,14 +22,8 @@ public class Magic_Fire_Standerd : MonoBehaviour
         m_magicSpeed = 100;
 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        ShotMagic();
-    }
-
-    private void ShotMagic()
+    
+    public void ShotMagic()
     {
         //右クリックが押させていなかったら早期リターン
         if (m_magic.IsStandardMagicFlg() != true) return;
